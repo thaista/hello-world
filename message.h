@@ -3,6 +3,8 @@
 
 #include <iostream> //for string data type
 
+//this custom header file is where the message class is declared
+
 using namespace std;
 
 class message
@@ -25,7 +27,7 @@ class message
 
 		//convention is to have two functions for every private variable
 		//one to return the contents of the variable...
-		string get_msg();
+		string get_msg() const;
 
 		//...and one to set the contents of the variable
 		void set_msg(string);
